@@ -1,0 +1,17 @@
+{
+  "name": "codex-bridge",
+  "version": "1.1.0",
+  "description": "Bridge to OpenAI Codex CLI — send prompts to Codex for execution (/codex) or use Codex to refine planning prompts (/claudex).",
+  "author": {
+    "name": "alilloig"
+  },
+  "keywords": ["codex", "openai", "bridge", "agent"],
+  "commands": ["./commands/codex.md", "./commands/claudex.md"],
+  "skills": "./skills/",
+  "mcpServers": {
+    "codex": {
+      "command": "codex",
+      "args": ["--dangerously-bypass-approvals-and-sandbox", "mcp-server"]
+    }
+  }
+}
